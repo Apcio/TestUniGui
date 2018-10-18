@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.539,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPowiaty.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.280,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPaczki.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.068,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwWojewodztwa.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.539,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPowiaty.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.584,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\ServerModule.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.280,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPaczki.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.218,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Klienci.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.230,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Project1.dproj=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\TestUniGui.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.677,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Main.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.300,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Paczki.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.068,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwWojewodztwa.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.300,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Paczki.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.265,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\KlienciDane.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.125,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\ImageModule.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.869,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.387,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.631,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\MainModule.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.300,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.093,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
