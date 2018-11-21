@@ -14,12 +14,12 @@ object UniMainModule: TUniMainModule
       'Password=masterkey'
       'CharacterSet=WIN1250'
       'DriverID=FB')
-    FetchOptions.AssignedValues = [evRecordCountMode]
+    FetchOptions.AssignedValues = [evCache, evAutoClose, evRecordCountMode, evAutoFetchAll]
     FetchOptions.RecordCountMode = cmTotal
+    ResourceOptions.AssignedValues = [rvAutoConnect]
     UpdateOptions.AssignedValues = [uvAutoCommitUpdates]
     UpdateOptions.AutoCommitUpdates = True
     ConnectedStoredUsage = []
-    Connected = True
     LoginPrompt = False
     Left = 56
     Top = 32

@@ -21,7 +21,6 @@ object PaczkiOkno: TPaczkiOkno
     Align = alTop
     TabOrder = 0
     Caption = ''
-    ExplicitWidth = 606
     object btnWyjscie: TUniButton
       Left = 818
       Top = 1
@@ -32,7 +31,6 @@ object PaczkiOkno: TPaczkiOkno
       ModalResult = 8
       Align = alRight
       TabOrder = 1
-      ExplicitLeft = 504
     end
     object UniPanel2: TUniPanel
       Left = 1
@@ -45,7 +43,6 @@ object PaczkiOkno: TPaczkiOkno
       TabOrder = 2
       Caption = ''
       AlwaysOnTop = True
-      ExplicitWidth = 504
       object UniToolBar1: TUniToolBar
         AlignWithMargins = True
         Left = 4
@@ -60,7 +57,6 @@ object PaczkiOkno: TPaczkiOkno
         TabOrder = 1
         ParentColor = False
         Color = clBtnFace
-        ExplicitWidth = 496
         object tbDodaj: TUniToolButton
           Left = 0
           Top = 0
@@ -68,6 +64,7 @@ object PaczkiOkno: TPaczkiOkno
           ImageIndex = 0
           Caption = ''
           TabOrder = 1
+          OnClick = tbDodajClick
         end
         object tbEdytuj: TUniToolButton
           Left = 20
@@ -76,6 +73,7 @@ object PaczkiOkno: TPaczkiOkno
           ImageIndex = 1
           Caption = ''
           TabOrder = 2
+          OnClick = tbEdytujClick
         end
         object tbUsun: TUniToolButton
           Left = 40
@@ -84,6 +82,7 @@ object PaczkiOkno: TPaczkiOkno
           ImageIndex = 5
           Caption = ''
           TabOrder = 3
+          OnClick = tbUsunClick
         end
         object UniToolButton2: TUniToolButton
           Left = 60
@@ -124,7 +123,7 @@ object PaczkiOkno: TPaczkiOkno
         FieldName = 'PRZESYLKA_RODZAJ'
         Title.Caption = 'Rodzaj przesy'#322'ki'
         MinWidth = 100
-        Width = 100
+        Width = 64
         ReadOnly = True
         Sortable = True
       end
@@ -210,13 +209,13 @@ object PaczkiOkno: TPaczkiOkno
       '    KLIENCI.ADRES_POWIAT AS NADAWCA_ADR_POWIAT,'
       '    KLIENCI.ADRES_WOJEWODZTWO AS NADAWCA_ADR_WOJEWODZTWO,'
       '    KLIENCI.KLIENT_VIP AS NADAWCA_VIP,'
-      '    SLW_PACZKI.RODZAJ AS PRZESYLKA_RODZAJ'
+      '    SLW_RODZAJ_PRZESYLKI.NAZWA AS PRZESYLKA_RODZAJ'
       'FROM PACZKI'
       ''
       'LEFT JOIN KLIENCI ON KLIENCI.IDKLIENT = PACZKI.IDKLIENT'
       
-        'LEFT JOIN SLW_PACZKI ON SLW_PACZKI.IDSLW_PACZKI = PACZKI.ID_SLW_' +
-        'RODZAJ_PRZESYLKI')
+        'LEFT JOIN SLW_RODZAJ_PRZESYLKI ON SLW_RODZAJ_PRZESYLKI.ID_SLW_RO' +
+        'DZAJ_PRZESYLKI = PACZKI.ID_SLW_RODZAJ_PRZESYLKI')
     Left = 520
     Top = 88
     object paczkiID_PACZKA: TIntegerField

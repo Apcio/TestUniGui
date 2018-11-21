@@ -1,24 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.539,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPowiaty.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.539,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPowiaty.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.280,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPaczki.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.828,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\szukajKlienta.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.292,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit2.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\FakturyDane.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.766,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\FvDane.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.847,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\PaczkiDane.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.631,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\MainModule.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.068,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwWojewodztwa.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.539,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPowiaty.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.584,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\ServerModule.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.280,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPaczki.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.218,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Klienci.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.230,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Project1.dproj=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\TestUniGui.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.280,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwPaczki.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.828,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\szukajKlienta.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.749,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\szukajPaczki.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.677,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Main.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.292,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit2.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\FakturyDane.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.748,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.230,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Project1.dproj=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\TestUniGui.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.584,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\ServerModule.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.300,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Paczki.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.068,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwWojewodztwa.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.766,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\FvDane.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.847,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\PaczkiDane.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.300,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.300,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Paczki.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.068,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\slwWojewodztwa.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.265,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\KlienciDane.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.749,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\szukajPaczki.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.565,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Faktury.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.125,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\ImageModule.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.093,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.310,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.565,C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.dfm=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Faktury.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.573,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.551,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.669,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.869,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.387,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.631,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\MainModule.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.300,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.093,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.584,=C:\Praca\Projekty\euco\Testy\UniGuiTest\src\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

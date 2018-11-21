@@ -101,7 +101,7 @@ object slwWojewodztwaOkno: TslwWojewodztwaOkno
     Hint = ''
     RowEditor = True
     DataSource = dsWojewodztwa
-    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgAutoRefreshRow]
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgAutoRefreshRow]
     ReadOnly = True
     LoadMask.WaitData = True
     LoadMask.Message = 'Wczytuj'#281' dane ...'
@@ -111,7 +111,7 @@ object slwWojewodztwaOkno: TslwWojewodztwaOkno
       item
         FieldName = 'WOJEWODZTWO'
         Title.Caption = 'Wojew'#243'dztwo'
-        Width = 64
+        Width = 180
       end>
   end
   object wojewodztwa: TFDQuery

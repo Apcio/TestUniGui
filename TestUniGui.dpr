@@ -11,7 +11,13 @@ uses
   slwWojewodztwa in 'slwWojewodztwa.pas' {slwWojewodztwaOkno: TUniForm},
   slwPowiaty in 'slwPowiaty.pas' {slwPowiatyOkno: TUniForm},
   slwPaczki in 'slwPaczki.pas' {slwPaczkiOkno: TUniForm},
-  Paczki in 'Paczki.pas' {PaczkiOkno: TUniForm};
+  Paczki in 'Paczki.pas' {PaczkiOkno: TUniForm},
+  PaczkiDane in 'PaczkiDane.pas' {PaczkiDaneOkno: TUniForm},
+  szukajKlienta in 'szukajKlienta.pas' {szukajKlientaOkno: TUniForm},
+  Faktury in 'Faktury.pas' {FakturyOkno: TUniForm},
+  FakturyDane in 'FakturyDane.pas' {DaneFakturyOkno: TUniForm},
+  szukajPaczki in 'szukajPaczki.pas' {szukajPaczkiOkno: TUniForm},
+  FvDane in 'FvDane.pas' {fvDaneOkno: TUniForm};
 
 {$R *.res}
 

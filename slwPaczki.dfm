@@ -101,18 +101,72 @@ object slwPaczkiOkno: TslwPaczkiOkno
     Hint = ''
     RowEditor = True
     DataSource = dsPaczki
-    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgAutoRefreshRow]
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgAutoRefreshRow]
     ReadOnly = True
     LoadMask.WaitData = True
     LoadMask.Message = 'Wczytuj'#281' dane ...'
+    HiddenPanel = UniHiddenPanel1
     Align = alClient
     TabOrder = 1
     Columns = <
       item
-        FieldName = 'RODZAJ'
+        FieldName = 'NAZWA'
+        Filtering.Editor = rodzajDBEdit
         Title.Caption = 'Rodzaj paczki'
-        Width = 64
+        Width = 120
+      end
+      item
+        FieldName = 'MAKS_WAGA'
+        Title.Caption = 'Maksymalna waga'
+        Width = 150
+        Editor = wagaMaksDBEdit
+      end
+      item
+        FieldName = 'CENA'
+        Title.Caption = 'Cena standardowa'
+        Width = 110
+        Editor = cenaDBEdit
       end>
+  end
+  object UniHiddenPanel1: TUniHiddenPanel
+    Left = 328
+    Top = 112
+    Width = 160
+    Height = 256
+    Hint = ''
+    Visible = True
+    object rodzajDBEdit: TUniDBEdit
+      Left = 16
+      Top = 3
+      Width = 121
+      Height = 22
+      Hint = ''
+      DataField = 'NAZWA'
+      DataSource = dsPaczki
+      TabOrder = 1
+    end
+    object wagaMaksDBEdit: TUniDBNumberEdit
+      Left = 16
+      Top = 31
+      Width = 121
+      Height = 22
+      Hint = ''
+      DataField = 'MAKS_WAGA'
+      DataSource = dsPaczki
+      TabOrder = 2
+      DecimalSeparator = ','
+    end
+    object cenaDBEdit: TUniDBNumberEdit
+      Left = 16
+      Top = 59
+      Width = 121
+      Height = 22
+      Hint = ''
+      DataField = 'CENA'
+      DataSource = dsPaczki
+      TabOrder = 3
+      DecimalSeparator = ','
+    end
   end
   object paczki: TFDQuery
     AfterPost = paczkiAfterPost
@@ -122,19 +176,30 @@ object slwPaczkiOkno: TslwPaczkiOkno
     FormatOptions.AssignedValues = [fvDataSnapCompatibility]
     UpdateOptions.AssignedValues = [uvCountUpdatedRecords, uvFetchGeneratorsPoint, uvGeneratorName]
     UpdateOptions.GeneratorName = 'IDSLW_PACZKI_GEN'
+    UpdateOptions.KeyFields = 'ID_SLW_RODZAJ_PRZESYLKI'
     SQL.Strings = (
-      'SELECT * FROM SLW_PACZKI')
+      'SELECT * FROM SLW_RODZAJ_PRZESYLKI')
     Left = 520
     Top = 88
-    object paczkiIDSLW_PACZKI: TIntegerField
-      AutoGenerateValue = arAutoInc
-      FieldName = 'IDSLW_PACZKI'
-      Origin = 'IDSLW_PACZKI'
+    object paczkiID_SLW_RODZAJ_PRZESYLKI: TIntegerField
+      FieldName = 'ID_SLW_RODZAJ_PRZESYLKI'
+      Origin = 'ID_SLW_RODZAJ_PRZESYLKI'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
-    object paczkiRODZAJ: TStringField
-      FieldName = 'RODZAJ'
-      Origin = 'RODZAJ'
+    object paczkiNAZWA: TStringField
+      FieldName = 'NAZWA'
+      Origin = 'NAZWA'
+      Size = 50
+    end
+    object paczkiCENA: TBCDField
+      FieldName = 'CENA'
+      Origin = 'CENA'
+      Precision = 18
+    end
+    object paczkiMAKS_WAGA: TSingleField
+      FieldName = 'MAKS_WAGA'
+      Origin = 'MAKS_WAGA'
     end
   end
   object dsPaczki: TDataSource

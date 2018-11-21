@@ -68,6 +68,7 @@ object MainForm: TMainForm
     Hint = ''
     Caption = 'Faktury'
     TabOrder = 3
+    OnClick = btnFakturyClick
   end
   object btnSlwPrzesylki: TUniButton
     Left = 384

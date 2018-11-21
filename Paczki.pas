@@ -51,6 +51,9 @@ type
     paczkiPRZESYLKA_RODZAJ: TStringField;
     procedure UniFormShow(Sender: TObject);
     procedure tbOdswiezClick(Sender: TObject);
+    procedure tbDodajClick(Sender: TObject);
+    procedure tbEdytujClick(Sender: TObject);
+    procedure tbUsunClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -64,7 +67,7 @@ implementation
 {$R *.dfm}
 
 uses
-  MainModule, uniGUIApplication, ImageModule;
+  MainModule, uniGUIApplication, ImageModule, PaczkiDane;
 
 function PaczkiOkno: TPaczkiOkno;
 begin
@@ -76,10 +79,44 @@ begin
   tbOdswiezClick(nil);
 end;
 
+procedure TPaczkiOkno.tbDodajClick(Sender: TObject);
+begin
+  PaczkiDaneOkno.nowaPozycja();
+  PaczkiDaneOkno.ShowModal(procedure (s: TComponent; r: integer)
+      begin
+        if r = mrOk then tbOdswiezClick(nil);
+      end
+  );
+end;
+
+procedure TPaczkiOkno.tbEdytujClick(Sender: TObject);
+begin
+  PaczkiDaneOkno.EdytujPozycje(paczkiID_PACZKA.AsInteger);
+  PaczkiDaneOkno.ShowModal(procedure (s: TComponent; r: integer)
+      begin
+        if r = mrOk then tbOdswiezClick(nil);
+      end
+  );
+
+end;
+
 procedure TPaczkiOkno.tbOdswiezClick(Sender: TObject);
 begin
   paczki.Close();
   paczki.Open();
+end;
+
+procedure TPaczkiOkno.tbUsunClick(Sender: TObject);
+begin
+  MessageDlg('Czy na pewno chcesz usun¹æ paczkê do odbiorcy: '
+    + paczkiODBIORCA_IMIE.AsString + ' ' + paczkiODBIORCA_NAZWISKO.AsString,
+    mtConfirmation, mbYesNo,
+      procedure (S: TCOmponent; r: Integer)
+      begin
+        if r <> mrYes then Exit();
+        paczki.Delete();
+        tbOdswiezClick(nil);
+      end);
 end;
 
 end.

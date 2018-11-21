@@ -101,7 +101,7 @@ object slwPowiatyOkno: TslwPowiatyOkno
     Hint = ''
     RowEditor = True
     DataSource = dsPowiaty
-    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgAutoRefreshRow]
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgAutoRefreshRow]
     ReadOnly = True
     LoadMask.WaitData = True
     LoadMask.Message = 'Wczytuj'#281' dane ...'
@@ -111,7 +111,7 @@ object slwPowiatyOkno: TslwPowiatyOkno
       item
         FieldName = 'KOD_POCZTOWY'
         Title.Caption = 'Kod pocztowy'
-        Width = 64
+        Width = 150
       end
       item
         FieldName = 'POWIAT'

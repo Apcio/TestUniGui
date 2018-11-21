@@ -9,7 +9,7 @@ uses
   FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
   FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, uniBasicGrid, uniDBGrid,
-  uniToolBar, uniButton, uniGUIBaseClasses, uniPanel;
+  uniToolBar, uniButton, uniGUIBaseClasses, uniPanel, uniDBEdit, uniEdit;
 
 type
   TslwPaczkiOkno = class(TUniForm)
@@ -24,8 +24,14 @@ type
     UniDBGrid1: TUniDBGrid;
     paczki: TFDQuery;
     dsPaczki: TDataSource;
-    paczkiIDSLW_PACZKI: TIntegerField;
-    paczkiRODZAJ: TStringField;
+    UniHiddenPanel1: TUniHiddenPanel;
+    rodzajDBEdit: TUniDBEdit;
+    wagaMaksDBEdit: TUniDBNumberEdit;
+    cenaDBEdit: TUniDBNumberEdit;
+    paczkiID_SLW_RODZAJ_PRZESYLKI: TIntegerField;
+    paczkiNAZWA: TStringField;
+    paczkiCENA: TBCDField;
+    paczkiMAKS_WAGA: TSingleField;
     procedure btnDodajClick(Sender: TObject);
     procedure btnEdytujClick(Sender: TObject);
     procedure btnUsunClick(Sender: TObject);
@@ -72,7 +78,7 @@ end;
 
 procedure TslwPaczkiOkno.btnUsunClick(Sender: TObject);
 begin
-  MessageDlg('Czy chcesz usun¹æ wpis: ' + paczkiRODZAJ.AsString, mtConfirmation, mbYesNo,
+  MessageDlg('Czy chcesz usun¹æ wpis: ' + paczkiNAZWA.AsString, mtConfirmation, mbYesNo,
     procedure (Sender: TComponent; mr: Integer)
     begin
       if mr = mrYes then

@@ -57,14 +57,17 @@ type
     UniDBLookupComboBox2: TUniDBLookupComboBox;
     slwPowiatyPOWIAT: TStringField;
     slwWojewodztwaWOJEWODZTWO: TStringField;
+    UniLabel10: TUniLabel;
+    UniDBComboBox1: TUniDBComboBox;
     procedure UniButton2Click(Sender: TObject);
-    procedure UniButton1Click(Sender: TObject);
     procedure UniFormCreate(Sender: TObject);
     procedure UniDBEdit3Exit(Sender: TObject);
+    procedure UniFormCancel(Sender: TObject);
   private
     { Private declarations }
     procedure sqlKlient(id: integer);
 
+    procedure InicjalizacjaWartosci();
   public
     { Public declarations }
     procedure NowaPozycja();
@@ -89,11 +92,8 @@ procedure TklienciDaneForm.NowaPozycja();
 begin
   sqlKlient(0);
   Klient.Append();
-end;
 
-procedure TklienciDaneForm.UniButton1Click(Sender: TObject);
-begin
-  Self.ModalResult := mrCancel;
+  InicjalizacjaWartosci();
 end;
 
 procedure TklienciDaneForm.UniButton2Click(Sender: TObject);
@@ -108,12 +108,23 @@ begin
     Exit();
   end;
 
-  if Trim(KlientIMIE.AsString) = '' then
+  if Trim(KlientNAZWISKO.AsString) = '' then
   begin
     ShowMessage('Wymagane jest poprawne nazwisko klienta',
       procedure (Sender: TComponent; res: integer)
       begin
         UniDBEdit2.SetFocus();
+      end
+    );
+    Exit();
+  end;
+
+  if Trim(KlientADRES_MIEJSCOWOSC.AsString) = '' then
+  begin
+    ShowMessage('Wymagane jest poprawne wprowadzenie miejscowoœci klienta',
+      procedure (Sender: TComponent; res: integer)
+      begin
+        UniDBEdit9.SetFocus();
       end
     );
     Exit();
@@ -146,6 +157,12 @@ begin
   end;
 end;
 
+procedure TklienciDaneForm.UniFormCancel(Sender: TObject);
+begin
+  if Klient.state in [dsInsert, dsEdit] then
+    Klient.Cancel();
+end;
+
 procedure TklienciDaneForm.UniFormCreate(Sender: TObject);
 begin
   slwPowiaty.Open();
@@ -163,6 +180,11 @@ begin
   Klient.Close();
   Klient.ParamByName('id').AsInteger := id;
   Klient.Open();
+end;
+
+procedure TklienciDaneForm.InicjalizacjaWartosci();
+begin
+  KlientKLIENT_VIP.AsString := 'Nie';
 end;
 
 end.

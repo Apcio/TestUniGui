@@ -29,6 +29,7 @@ type
     procedure slwPowiatyClick(Sender: TObject);
     procedure btnSlwPrzesylkiClick(Sender: TObject);
     procedure btnPaczkiClick(Sender: TObject);
+    procedure btnFakturyClick(Sender: TObject);
   private
     { Private declarations }
 
@@ -44,11 +45,17 @@ implementation
 
 uses
   uniGUIVars, MainModule, uniGUIApplication, ImageModule, Klienci, slwWojewodztwa,
-  slwPowiaty, slwPaczki, Paczki;
+  slwPowiaty, slwPaczki, Paczki, Faktury, FvDane;
 
 function MainForm: TMainForm;
 begin
   Result := TMainForm(UniMainModule.GetFormInstance(TMainForm));
+end;
+
+procedure TMainForm.btnFakturyClick(Sender: TObject);
+begin
+  //FvDane.fvDaneOkno.nowaPozycja();
+  Faktury.FakturyOkno.Show();
 end;
 
 procedure TMainForm.btnKlienciClick(Sender: TObject);

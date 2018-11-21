@@ -10,6 +10,7 @@ object klienciDaneForm: TklienciDaneForm
   OldCreateOrder = False
   MonitoredKeys.Keys = <>
   AlignmentControl = uniAlignmentClient
+  OnCancel = UniFormCancel
   OnCreate = UniFormCreate
   PixelsPerInch = 96
   TextHeight = 13
@@ -62,6 +63,28 @@ object klienciDaneForm: TklienciDaneForm
       Alignment = taRightJustify
       Caption = 'Nazwisko:'
       TabOrder = 4
+    end
+    object UniLabel10: TUniLabel
+      Left = 384
+      Top = 24
+      Width = 20
+      Height = 13
+      Hint = ''
+      Caption = 'VIP:'
+      TabOrder = 5
+    end
+    object UniDBComboBox1: TUniDBComboBox
+      Left = 384
+      Top = 43
+      Width = 65
+      Hint = ''
+      DataField = 'KLIENT_VIP'
+      DataSource = dsKlient
+      Items.Strings = (
+        'Nie'
+        'Tak')
+      TabOrder = 6
+      ForceSelection = False
     end
   end
   object gpAdres: TUniGroupBox
@@ -258,10 +281,10 @@ object klienciDaneForm: TklienciDaneForm
       Hint = ''
       Caption = 'Anuluj'
       Cancel = True
+      ModalResult = 2
       TabOrder = 2
       Images = IM.image16
       ImageIndex = 2
-      OnClick = UniButton1Click
     end
   end
   object Klient: TFDQuery
